@@ -10,7 +10,7 @@ export default function NavBar() {
             <nav className='bg-gray-100'>
                 <div className='px-8  lg:px-16 mx-auto py-4'>
                     <div className='flex flex-row items-center justify-between'>
-                        <div className='text-2xl'>
+                        <div className='md:hidden text-2xl'>
                             <div className="absolute top-6" onClick={() => setOpen(!open)}>
 
                                 <ion-icon name={open ? "close" : "menu"}></ion-icon>
@@ -40,12 +40,26 @@ export default function NavBar() {
 
                         <div classNamen='flex md:space-x-4 items-center'>
                             <button className=' rounded-md font-bold text-[1rem] px-4 py-2'>Login</button>
-                            <button className='bg-orange-400 font-bold text-[1rem] text-white rounded-md px-4 py-2'>Sign up</button>
+                            <button className='bg-orange-400 hover:bg-orange-500 font-bold text-[1rem] text-white rounded-md px-4 py-2'>Sign up</button>
                         </div>
                     </div>
 
 
 
+                </div>
+                <div className={`md:hidden text-center absolute w-full bg-gray-100  
+                                 space-y-8 h-[100vh] transition-all ease-in duration-500 text-[1.2rem]
+                                 ${open ? 'left-[0px]' : 'left-[-500px]'}`}
+                     >
+                    <a href="">
+                        <p>Home</p>
+                    </a><a href="">
+                        <p>Packages</p>
+                    </a><a href="">
+                        <p>About</p>
+                    </a><a href="">
+                        <p>Contact Us</p>
+                    </a>
                 </div>
             </nav>
 
