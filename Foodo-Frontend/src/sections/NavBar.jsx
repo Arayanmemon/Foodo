@@ -7,7 +7,7 @@ export default function NavBar() {
     return (
         <>
 
-            <nav className='bg-gray-100'>
+            <nav className='bg-white'>
                 <div className='px-8  lg:px-16 mx-auto py-4'>
                     <div className='flex flex-row items-center justify-between'>
                         <div className='md:hidden text-2xl'>
@@ -17,7 +17,7 @@ export default function NavBar() {
 
                             </div>
                         </div>
-                        <div className='ml-16 md:ml-0'>
+                        <div className='ml-16 md:ml-0 bg-white'>
                             <img src={logo} alt="logo" className='w-[3rem]' />
                         </div>
 
@@ -47,19 +47,21 @@ export default function NavBar() {
 
 
                 </div>
-                <div className={`md:hidden text-center absolute w-full bg-gray-100  
-                                 space-y-8 h-[100vh] transition-all ease-in duration-500 text-[1.2rem]
+                <div className={`md:hidden text-center absolute w-[60%] bg-gray-100 z-[1] 
+                                 h-[100vh] transition-all ease-in duration-500 text-[1.2rem]
                                  ${open ? 'left-[0px]' : 'left-[-500px]'}`}
                      >
-                    <a href="">
-                        <p>Home</p>
-                    </a><a href="">
-                        <p>Packages</p>
-                    </a><a href="">
-                        <p>About</p>
-                    </a><a href="">
-                        <p>Contact Us</p>
-                    </a>
+                    <div className='flex flex-col space-y-8 mt-4'>
+                        <a  href="#">
+                            <p>Home</p>
+                        </a><a href="#">
+                            <p>Packages</p>
+                        </a><a href="#">
+                            <p>About</p>
+                        </a><a href="#">
+                            <p>Contact Us</p>
+                        </a>
+                    </div>
                 </div>
             </nav>
 
