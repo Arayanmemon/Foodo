@@ -7,7 +7,7 @@ export default function NavBar() {
     return (
         <>
 
-            <nav className='bg-white'>
+            <nav className='bg-white sticky top-0 z-1'>
                 <div className='px-8  lg:px-16 mx-auto py-4'>
                     <div className='flex flex-row items-center justify-between'>
                         <div className='md:hidden text-2xl'>
