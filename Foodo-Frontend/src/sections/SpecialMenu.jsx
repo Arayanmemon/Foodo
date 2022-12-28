@@ -1,5 +1,5 @@
 import React from 'react'
-import SpecialMenuCarousel from '../components/SpecialMenuCarousel'
+import SpecialMenuGrid from '../components/SpecialMenuGrid'
 
 export default function SpecialMenu() {
   return (
@@ -12,7 +12,9 @@ export default function SpecialMenu() {
             <br />
             when looking at it's layout
         </p>
-        <SpecialMenuCarousel />
+
+        <SpecialMenuGrid />
+    
     </div>
   )
 }

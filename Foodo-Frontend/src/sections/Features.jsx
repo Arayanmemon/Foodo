@@ -22,7 +22,7 @@ export default function Features() {
 
 
         </div>
-        <div className='md:hidden grid grid-cols-1 space-y-8 md:space-y-0 md:grid-cols-3 md:space-x-8 w-4/6 mx-auto'>
+        <div className='md:hidden grid z-0 grid-cols-1 space-y-8 md:space-y-0 md:grid-cols-3 md:space-x-8 w-4/6 mx-auto'>
 
           <Carousel autoplay={true} showArrows={true} interval={200} showThumbs={false}>
             <div>
