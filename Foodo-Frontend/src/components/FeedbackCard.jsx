@@ -3,7 +3,7 @@ import React from 'react'
 export default function FeedbackCard() {
   return (
    
-      <div className='w-1/4 h-auto shadow-lg bg-white py-4 rounded-md'>
+      <div className='w-[15rem] h-auto shadow-lg bg-white py-4 rounded-md'>
         <div className='text-left px-3 mt-6'>
           <div className='flex justify-between'>
             <span>Jeeny Wilson</span>

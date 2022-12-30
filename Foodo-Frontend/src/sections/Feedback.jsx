@@ -10,7 +10,7 @@ function Feedback() {
       <p className='text-xl pb-5'>It is a long established fact that a reader will distracted by the readable content of a page when looking at its layout.</p>
       </div>
       
-      <div className='flex justify-around items-center my-10'>
+      <div className='flex md:justify-around items-center my-10 flex-col md:flex-row gap-4'>
         
           <FeedbackCard />
           <FeedbackCard />
