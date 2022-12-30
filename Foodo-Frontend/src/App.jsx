@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <div className='bg-gray-100 pb-10'>
+    <div className='bg-gray-100 pb-10 w-full'>
       
         <NavBar />
         <Hero />
