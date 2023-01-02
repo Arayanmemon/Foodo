@@ -1,6 +1,7 @@
 import React from 'react'
 import CardCarousel from '../components/CardCarousel'
 import ItemCard from '../components/ItemCard'
+import items from '../assets/data/items.json'
 
 export default function SpecialMenu() {
   return (
@@ -15,13 +16,13 @@ export default function SpecialMenu() {
       </p>
 
         <CardCarousel>
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
+          {
+            items.map((i) => {
+             return  <ItemCard item={i} />
+              
+            })
+          }
         </CardCarousel>
-
-
     </div>
   )
 }

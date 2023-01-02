@@ -22,9 +22,9 @@ export default function Features() {
         </div> */}
 
         <CardCarousel >
-          <FeaturesCard name="fast-food" description="It is a long established fact that a reader will be distracted by readable content" heading="Eat Good Food" />
-          <FeaturesCard name="beer" description="It is a long established fact that a reader will be distracted by readable content" heading="Best Quality" />
-          <FeaturesCard name="pizza" description="It is a long established fact that a reader will be distracted by readable content" heading="Fastest Delivery" />
+          <FeaturesCard name="delivery" description="It is a long established fact that a reader will be distracted by readable content" heading="Eat Good Food" />
+          <FeaturesCard name="burger" description="It is a long established fact that a reader will be distracted by readable content" heading="Best Quality" />
+          <FeaturesCard name="delivery" description="It is a long established fact that a reader will be distracted by readable content" heading="Fastest Delivery" />
 
         </CardCarousel>
 

@@ -5,6 +5,7 @@ import Features from './sections/Features'
 import SpecialMenu from './sections/SpecialMenu'
 import Feedback from './sections/Feedback'
 import Footer from './sections/Footer'
+import Menu from './sections/Menu'
 function App() {
 
 
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Features />
         <SpecialMenu />
+        <Menu />
         <Feedback />
     </div>
 

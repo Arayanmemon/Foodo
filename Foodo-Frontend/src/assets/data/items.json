@@ -1,0 +1,38 @@
+[
+        {
+                "id" : "1",
+                "name" : "Biryani",
+                "serving" : "Plate",
+                "price" : "100",
+                "description" : "This is greatest dish on earth",
+                "img" : "/images/biryani.jpg",
+                "reviews":"2133"
+        },
+        {
+                "id" : "2",
+                "name" : "Karahi",
+                "serving" : "Plate",
+                "price" : "200",
+                "description" : "This is favourite dish of pakistan",
+                "img" : "/images/karahi.jpg",
+                "reviews":"1234"
+        },
+        {
+                "id" : "3",
+                "name" : "Fish fry",
+                "serving" : "Plate",
+                "price" : "300",
+                "description" : "This is crispy and lovely",
+                "img" : "/images/biryani.jpg",
+                "reviews":"2942"
+        },
+        {
+                "id" : "4",
+                "name" : "Chicken Burger",
+                "serving" : "",
+                "price" : "100",
+                "description" : "This is greatest dish on earth",
+                "img" : "/images/burger.jpg",
+                "reviews":"29"
+        }
+]
