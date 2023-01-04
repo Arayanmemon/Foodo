@@ -1,6 +1,6 @@
 import React from 'react'
 import { formatPrice } from '../utilities/formatPrice'
-
+import { useCartContext } from '../contexts/CartContext'
 
 
 // this is item card component
@@ -9,6 +9,7 @@ import { formatPrice } from '../utilities/formatPrice'
 
 
 export default function ItemCard({item}) {
+  const {cartItems , addItem} = useCartContext()
     return (
         <div className='w-9/12 mx-auto   rounded-md bg-white shadow-lg'>
 
@@ -29,7 +30,8 @@ export default function ItemCard({item}) {
                 </div>
                 <div className='flex flex-row justify-between items-center'>
                     <p className='text-md md:text-lg'>{formatPrice(item.price)}</p>
-                    <button className='px-6 text-white py-2 text-sm bg-orange-400 hover:bg-orange-500 rounded-md'>Order Now</button>
+                    <button  onClick={() => addItem(item.id)}
+                     className='px-6 text-white py-2 text-sm bg-orange-400 hover:bg-orange-500 rounded-md'>Order Now</button>
                 </div>
             </div>
 
