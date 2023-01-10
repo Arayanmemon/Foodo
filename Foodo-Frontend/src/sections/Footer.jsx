@@ -7,22 +7,22 @@ function Footer() {
     let isExpanded = false
     return (
         <div>
-            <div className='lg:w-[40rem] lg:text-left lg:ml-[49rem] text-center lg:hidden'>
+            <div className='xl:w-[40rem] xl:text-left xl:ml-[49rem] text-center lg:hidden'>
                 <h2 className='text-3xl my-6 font-extrabold'>Frequently Asked Questions</h2>
-                <p className='text-lg mb-12'>We offer a multidisciplinary and intregrative approach to joint care, which means we do everything we can to help you find fast, lasting relief.</p>
+                <p className='text-xl mb-12'>We offer a multidisciplinary and intregrative approach to joint care, which means we do everything we can to help you find fast, lasting relief.</p>
             </div>
 
             <div className='pt-10 flex justify-around items-start flex-wrap gap-2' >
                 {/* image */}
-                <div className='lg:w-[45rem] w-[30rem]'>
+                <div className='xl:w-[45rem] w-[30rem]'>
                     <img src={chef2} alt="Chef" className='' />
                 </div>
 
                 {/* faqs */}
-                <div className='lg:w-[40rem] w-[25rem]'>
+                <div className='xl:w-[35rem] w-[25rem]'>
                     <div className='text-left hidden lg:block'>
                         <h2 className='text-3xl my-6 font-extrabold'>Frequently Asked Questions</h2>
-                        <p className='text-lg mb-12'>We offer a multidisciplinary and intregrative approach to joint care, which means we do everything we can to help you find fast, lasting relief.</p>
+                        <p className='text-xl mb-12'>We offer a multidisciplinary and intregrative approach to joint care, which means we do everything we can to help you find fast, lasting relief.</p>
                     </div>
                     <Accordion allowMultiple>
 
