@@ -2,6 +2,7 @@ import React from 'react'
 import FeaturesCard from '../components/FeaturesCard'
 import CardCarousel from '../components/CardCarousel'
 export default function Features() {
+  
   return (
     <>
       <div className='text-center'>
