@@ -4,7 +4,8 @@ export default function Hero() {
   const {cartItems , addItem} = useCartContext()
   return (
     <div>
-      hero  
+      hero <br />
+      {cartItems.map((i) => {return i.id})}  
     </div>
   )
 }

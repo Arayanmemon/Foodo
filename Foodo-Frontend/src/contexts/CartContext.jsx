@@ -9,7 +9,7 @@ export function useCartContext() {
 }
 
 export function CartProvider({ children }) {
-    const [cartItems, setCart] = useState([]);
+    const [cartItems, setCart] = useState([""]);
 
     function addItem(id) {
         if(cartItems.find((item) =>  item.id === id ) == null){
