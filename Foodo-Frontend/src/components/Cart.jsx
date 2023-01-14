@@ -21,7 +21,7 @@ export default function Cart({ open, setOpen }) {
           {cartItems.map((i) => {
             const item = items.find((it) => it.id == i.id)
             if (item != null) {
-              return <CartItem item={item} />
+              return <CartItem item={item} cartItem = {i} />
             }
           })}
 
