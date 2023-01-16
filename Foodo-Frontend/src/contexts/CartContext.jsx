@@ -39,9 +39,16 @@ export function CartProvider({ children }) {
     function decreaseQuantity(id){
         setCart((cartItems) => {
             return cartItems.map((i) => {
-                if(i.id == id && i.quantity > 1){
-                    return {...i , quantity : i.quantity - 1}
-                }else{
+                if(i.id == id ){
+                    if(i.quantity > 1){
+                        return {...i , quantity : i.quantity - 1}
+                    }else{
+                        return cartItems.filter((i) => {
+                            if(i.id !=id) return i
+                        }) 
+                    }
+                
+                }else {
                     return i
                 }
             })
