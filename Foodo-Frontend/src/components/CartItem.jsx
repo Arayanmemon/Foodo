@@ -10,7 +10,7 @@ export default function CartItem({ item, cartItem }) {
         <>
           <div>
 
-            <img src={item.img} alt={item.name} className="w-10 rounded-md h-10 my-4" />
+            <img src={item.img} alt={item.name} className="w-12 rounded-md h-12 my-4" />
 
           </div>
 

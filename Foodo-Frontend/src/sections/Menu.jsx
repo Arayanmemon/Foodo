@@ -1,5 +1,7 @@
 import React from 'react'
-
+import items from '../assets/data/items.json'
+import CartItem from '../components/CartItem'
+import ItemCard from '../components/ItemCard'
 export default function Menu() {
   return (
     <div className='w-4/5 mx-auto mb-8 bg-gray-100'>
@@ -13,6 +15,12 @@ export default function Menu() {
             </div>
       </div>
       <img src="/images/banner.jpg" alt="" />
+
+      <div className='grid grid-cols-3 mt-4 space-x-2 space-y-4'>
+        {items.map((i) => {
+          return <ItemCard item={i} />
+        })}
+      </div>
     </div>
   )
 }

@@ -15,7 +15,7 @@ export default function SpecialMenu() {
         when looking at it's layout
       </p>
 
-        <CardCarousel>
+        <CardCarousel >
           {
             items.map((i) => {
              return  <ItemCard item={i} />

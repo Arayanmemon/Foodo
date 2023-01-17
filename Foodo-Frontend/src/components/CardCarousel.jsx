@@ -23,7 +23,7 @@ const responsive = {
 export default function CardCarousel(props) {
         return(
                         <div className='w-4/5 mx-auto'>
-                                <Carousel showDots={true} renderArrowsWhenDisabled={true}  arrows={false} responsive={responsive} className='pb-12' >
+                                <Carousel showDots={true} renderArrowsWhenDisabled={false}  arrows={true} responsive={responsive} className='pb-12' >
                                         {props.children}
                                 </Carousel>
                         </div>

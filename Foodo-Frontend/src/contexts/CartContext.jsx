@@ -43,9 +43,18 @@ export function CartProvider({ children }) {
                     if(i.quantity > 1){
                         return {...i , quantity : i.quantity - 1}
                     }else{
-                        return cartItems.filter((i) => {
-                            if(i.id !=id) return i
-                        }) 
+                        // /const ans = confirm("Are u sure u want to remove the item?")
+                       
+                        if(ans){
+
+                            return cartItems.filter((i) => {
+    
+                                if(i.id !=id) return i
+                            }) 
+                        }else{
+                            return i
+
+                        }
                     }
                 
                 }else {

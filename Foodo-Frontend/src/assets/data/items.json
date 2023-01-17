@@ -4,7 +4,7 @@
                 "name" : "Biryani",
                 "serving" : "Plate",
                 "price" : "100",
-                "description" : "This is greatest dish on earth",
+                "description" : "This is greatest dish on earth Wll i have to write somemthing",
                 "img" : "/images/biryani.jpg",
                 "reviews":"2133"
         },
@@ -13,7 +13,7 @@
                 "name" : "Karahi",
                 "serving" : "Plate",
                 "price" : "200",
-                "description" : "This is favourite dish of pakistan",
+                "description" : "This is favourite dish of pakistan Wll i have to write somemthing",
                 "img" : "/images/karahi.jpg",
                 "reviews":"1234"
         },
@@ -22,7 +22,7 @@
                 "name" : "Fish fry",
                 "serving" : "Plate",
                 "price" : "300",
-                "description" : "This is crispy and lovely",
+                "description" : "This is crispy and lovely Wll i have to write somemthing",
                 "img" : "/images/biryani.jpg",
                 "reviews":"2942"
         },
@@ -31,7 +31,7 @@
                 "name" : "Chicken Burger",
                 "serving" : "",
                 "price" : "100",
-                "description" : "This is greatest dish on earth",
+                "description" : "This is greatest dish on earth Wll i have to write somemthing",
                 "img" : "/images/burger.jpg",
                 "reviews":"29"
         },
@@ -40,7 +40,7 @@
                 "name" : "Chicken Burger",
                 "serving" : "",
                 "price" : "100",
-                "description" : "This is greatest dish on earth",
+                "description" : "This is greatest dish on earth Wll i have to write somemthing",
                 "img" : "/images/biryani.jpg",
                 "reviews":"29"
         }
