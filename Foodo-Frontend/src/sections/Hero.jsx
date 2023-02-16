@@ -1,10 +1,13 @@
 import React from 'react'
-import { useCartContext } from '../contexts/CartContext'
 import chef1 from '../assets/images/chef1.png'
+import { useState } from 'react'
+import axios from 'axios'
+import { useEffect } from 'react'
+
 export default function Hero() {
-  const {cartItems , addItem} = useCartContext()
   return (
     <div>
+
       <div className='flex mx-auto justify-between items-center pt-10 h-[80vh]'>
         <div className="text-center pl-32 space-y-3 space-x-1 py-20">
           <h1 className='text-5xl font-bold'>Food you love,</h1>
@@ -21,7 +24,7 @@ export default function Hero() {
 
 
 
-      {cartItems.map((i) => {return i.id})}  
+      {/* {cartItems.map((i) => {return i.id})}   */}
     </div>
   )
 }
