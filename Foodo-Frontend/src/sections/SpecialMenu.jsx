@@ -1,9 +1,25 @@
 import React from 'react'
 import CardCarousel from '../components/CardCarousel'
 import ItemCard from '../components/ItemCard'
-import items from '../assets/data/items.json'
-
+import { useState , useEffect } from 'react'
+import axios from 'axios'
 export default function SpecialMenu() {
+  const [items , setItems] = useState([])
+  function getAllItems() {
+        axios
+             .get('http://localhost:8080/items')
+             .then((res)=>{
+                    const result = res.data;
+                    setItems(result)
+             })
+             .catch((err) => {
+                  console.log(`Error:  + ${err}`)
+             })
+  }
+  useEffect(()=>{
+    getAllItems()
+  } , [])
+
   return (
     <div className='text-center mt-4'>
       <h1 className='text-lg md:text-4xl font-extrabold mb-4'>
