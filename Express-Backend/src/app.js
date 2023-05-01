@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 app.set('port' , process.env.PORT || 3000)
 app.set('key' , process.env.SECRET_KEY)
+console.log(process.env.SECRET_KEY)
 mongoose
         .connect(process.env.MONGOURI , {
                 useNewUrlParser: true,
@@ -25,7 +26,7 @@ mongoose
 
                 console.log(err)
                 console.log('Database Connection failed!!!')
-                console.log('Shutting server down!!!!!');
+                console.log('Shutting server down!!!!!')
                 process.exit(0)
         })
 
