@@ -3,6 +3,17 @@ import items from '../assets/data/items.json'
 import CartItem from '../components/CartItem'
 import ItemCard from '../components/ItemCard'
 export default function Menu() {
+  // const [items , setItems] = React.useState([])
+  // React.useEffect(() => {
+  //   fetch('http://localhost:8080/items')
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setItems(data)
+  //     })
+  //     .catch(err => {
+  //       console.log(err)
+  //     })
+  // } , [])
   return (
     <div className='w-4/5 mx-auto mb-8 bg-gray-100'>
       <div className='grid grid-cols-1 md:grid-cols-3 mb-8 '>

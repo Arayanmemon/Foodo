@@ -3,6 +3,7 @@ import { formatPrice } from '../utilities/formatPrice'
 import { useCartContext } from '../contexts/CartContext'
 
 
+
 // this is item card component
 // it will get item object as prop
 //item object will have necessary data like name , price , discount , img etc
@@ -10,10 +11,11 @@ import { useCartContext } from '../contexts/CartContext'
 
 export default function ItemCard({item}) {
   const {cartItems , addItem} = useCartContext()
-    return (
+    const imgSrc = "/images/karahi.jpg"  
+  return (
         <div className='w-9/12 mx-auto   rounded-md bg-white shadow-lg'>
 
-            <img className='rounded-t-md w-full' src={item.img} alt="" />
+            <img className='rounded-t-md w-full' src={imgSrc} alt="" />
 
             <div className='p-4 text-sm md:text-lg'>
                 <p>{item.name}</p>

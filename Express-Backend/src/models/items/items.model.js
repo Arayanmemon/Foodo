@@ -5,8 +5,8 @@ const schema = new mongoose.Schema({
         serving : {type: String , required: true},
         price : {type: Number , required: true},
         description : {type: String },
-        img: {type: String},
+        img: {type: Buffer},
         rating: {type: Number}
 })
 
-export const ItemsModel = mongoose.model("ItemsModel" , schema)
+export const Items = mongoose.model("Items" , schema)

@@ -24,9 +24,9 @@ const verify = (req , res , next) => {
                 res.sendStatus(403)
         }
 }
-itemsRouter.get("/",verify, itemsService.getAll);
-itemsRouter.get("/:id" , itemsService.getById)
-itemsRouter.post("/", itemsService.create);
+itemsRouter.get("/" ,itemsService.getAll);
+itemsRouter.get("/:id", itemsService.getById)
+itemsRouter.post("/" , itemsService.create);
 itemsRouter.patch("/", itemsService.update);
 itemsRouter.delete("/:id", itemsService.delete);
 

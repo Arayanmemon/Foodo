@@ -34,14 +34,5 @@
                 "description" : "This is greatest dish on earth Wll i have to write somemthing",
                 "img" : "/images/burger.jpg",
                 "reviews":"29"
-        },
-        {
-                "id" : "5",
-                "name" : "Chicken Burger",
-                "serving" : "",
-                "price" : "100",
-                "description" : "This is greatest dish on earth Wll i have to write somemthing",
-                "img" : "/images/biryani.jpg",
-                "reviews":"29"
         }
 ]
